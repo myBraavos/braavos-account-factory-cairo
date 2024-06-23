@@ -1,0 +1,14 @@
+[package]
+name = "braavos_account_factory"
+version = "1.0.0"
+cairo_version = "2.5.3"
+edition = "2023_11"
+
+[[target.starknet-contract]]
+allowed-libfuncs-list.name = "audited"
+casm = true
+casm-add-pythonic-hints = true
+
+[dependencies]
+starknet = "=2.5.3"
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.10.0"}
